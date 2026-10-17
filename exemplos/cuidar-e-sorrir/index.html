@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuidar e Sorrir Odontologia | Dra. Carmen Silvia (prévia)</title>
+  <meta name="description" content="Prévia de site para a Cuidar e Sorrir Odontologia, criada pela Marcos Felipe Design.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f3d3a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f3d3a'/%3E%3Cpath d='M20 18c-6 0-9 6-8 13 1 6 3 10 4 16 1 4 5 4 6 0l2-9c1-3 5-3 6 0l2 9c1 4 5 4 6 0 1-6 3-10 4-16 1-7-2-13-8-13-4 0-6 2-10 2s-6-2-10-2z' fill='%23d9f2ec'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep: #0f3d3a;
+      --deep-2: #164e49;
+      --mint: #d9f2ec;
+      --mint-2: #eef9f6;
+      --sand: #faf7f2;
+      --ink: #1d2b2a;
+      --muted: #5d6f6c;
+      --line: #e3ece9;
+      --gold: #c9a227;
+      --wa: #1fa855;
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: clip; }
+    body {
+      margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink);
+      background: var(--sand); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: clip;
+    }
+    a { color: inherit; }
+    h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 600; line-height: 1.12; margin: 0 0 .5em; letter-spacing: -.01em; }
+    p { margin: 0 0 1em; }
+    .wrap { width: min(1140px, 100% - 32px); margin-inline: auto; }
+
+    /* Preview ribbon */
+    .preview {
+      background: var(--deep); color: var(--mint); font-size: 13px; text-align: center; padding: 9px 16px;
+    }
+    .preview b { color: #fff; }
+
+    header { position: sticky; top: 0; z-index: 20; background: rgba(250,247,242,.88); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 70px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark { width: 40px; height: 40px; border-radius: 12px; background: var(--deep); display: grid; place-items: center; }
+    .brand-mark svg { width: 24px; height: 24px; }
+    .brand b { font-family: Fraunces, serif; font-size: 19px; display: block; line-height: 1.1; }
+    .brand small { color: var(--muted); font-size: 12.5px; }
+    .nav-links { display: flex; gap: 26px; font-size: 15px; color: var(--muted); }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover { color: var(--deep); }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none;
+      padding: 15px 24px; border-radius: 999px; font-weight: 600; font-size: 15.5px; transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-wa { background: var(--wa); color: #fff; box-shadow: 0 10px 24px rgba(31,168,85,.25); }
+    .btn-line { border: 1.5px solid var(--deep); color: var(--deep); }
+    .btn-sm { padding: 10px 18px; font-size: 14px; }
+    .wa-icon { width: 19px; height: 19px; flex: none; }
+
+    /* Hero */
+    .hero { position: relative; overflow: hidden; padding: 80px 0 90px; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(60px); opacity: .7; z-index: 0; }
+    .blob.a { width: 520px; height: 520px; background: var(--mint); right: -120px; top: -140px; animation: float 14s ease-in-out infinite; }
+    .blob.b { width: 360px; height: 360px; background: #f3e7c9; left: -120px; bottom: -160px; animation: float 18s ease-in-out infinite reverse; }
+    @keyframes float { 50% { transform: translate(-30px, 30px) scale(1.06); } }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--deep-2); background: var(--mint); padding: 7px 14px; border-radius: 999px; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(38px, 5.4vw, 64px); color: var(--deep); }
+    .hero h1 em { font-style: italic; font-weight: 400; color: var(--deep-2); }
+    .hero p.lead { font-size: 18.5px; color: var(--muted); max-width: 520px; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .emergency { margin-top: 22px; font-size: 14.5px; color: var(--muted); display: flex; align-items: center; gap: 10px; }
+    .emergency a { color: var(--deep); font-weight: 600; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: #e0563b; box-shadow: 0 0 0 0 rgba(224,86,59,.5); animation: pulse 2s infinite; flex: none; }
+    @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(224,86,59,0); } 100% { box-shadow: 0 0 0 0 rgba(224,86,59,0); } }
+
+    .hero-card {
+      background: #fff; border-radius: 30px; padding: 30px; box-shadow: 0 30px 60px rgba(15,61,58,.12);
+      border: 1px solid var(--line); position: relative;
+    }
+    .tooth-wrap { aspect-ratio: 1 / .78; border-radius: 22px; background: linear-gradient(160deg, var(--mint-2), var(--mint)); display: grid; place-items: center; overflow: hidden; position: relative; }
+    .tooth { width: 46%; filter: drop-shadow(0 18px 24px rgba(15,61,58,.18)); animation: bob 6s ease-in-out infinite; }
+    @keyframes bob { 50% { transform: translateY(-10px) rotate(-3deg); } }
+    .sparkle { position: absolute; color: #fff; font-size: 22px; animation: twinkle 3s ease-in-out infinite; }
+    .sparkle.s1 { top: 18%; right: 24%; } .sparkle.s2 { top: 36%; left: 20%; animation-delay: 1s; font-size: 16px; } .sparkle.s3 { bottom: 22%; right: 18%; animation-delay: 2s; font-size: 14px; }
+    @keyframes twinkle { 50% { opacity: .2; transform: scale(.7); } }
+    .hero-card .doc { display: flex; align-items: center; gap: 14px; margin-top: 22px; }
+    .avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--deep); color: var(--mint); display: grid; place-items: center; font-family: Fraunces, serif; font-size: 20px; }
+    .hero-card .doc b { display: block; font-family: Fraunces, serif; font-size: 18px; }
+    .hero-card .doc span { color: var(--muted); font-size: 14px; }
+
+    section { padding: 96px 0; }
+    .section-head { max-width: 640px; margin-bottom: 44px; }
+    .section-head h2 { font-size: clamp(30px, 3.6vw, 44px); color: var(--deep); }
+    .section-head p { color: var(--muted); font-size: 17px; }
+    .kicker { font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+
+    .services { background: #fff; border-block: 1px solid var(--line); }
+    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .svc { border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; background: var(--sand); transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
+    .svc:hover { transform: translateY(-4px); background: #fff; box-shadow: 0 18px 40px rgba(15,61,58,.08); }
+    .svc .ic { width: 48px; height: 48px; border-radius: 14px; background: var(--mint); display: grid; place-items: center; margin-bottom: 18px; }
+    .svc .ic svg { width: 24px; height: 24px; stroke: var(--deep); }
+    .svc h3 { font-size: 21px; }
+    .svc p { color: var(--muted); margin: 0; font-size: 15.5px; }
+    .note { font-size: 13px; color: var(--muted); margin-top: 18px; }
+
+    /* Why */
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .why-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+    .why-list li { display: flex; gap: 16px; }
+    .why-list .n { flex: none; width: 38px; height: 38px; border-radius: 50%; border: 1.5px solid var(--deep); color: var(--deep); display: grid; place-items: center; font-family: Fraunces, serif; }
+    .why-list b { display: block; font-size: 17px; }
+    .why-list span { color: var(--muted); font-size: 15.5px; }
+    .quote {
+      background: var(--deep); color: var(--mint); border-radius: 30px; padding: 44px; position: relative; overflow: hidden;
+    }
+    .quote::after { content: "\201C"; position: absolute; right: 24px; top: -30px; font-family: Fraunces, serif; font-size: 220px; color: rgba(217,242,236,.08); }
+    .quote p { font-family: Fraunces, serif; font-size: 26px; line-height: 1.35; color: #fff; }
+    .quote small { color: var(--mint); }
+
+    /* Steps */
+    .steps { background: var(--mint-2); }
+    .step-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: s; }
+    .step { background: #fff; border-radius: var(--radius); padding: 30px; border: 1px solid var(--line); }
+    .step::before { counter-increment: s; content: "0" counter(s); font-family: Fraunces, serif; font-size: 34px; color: var(--gold); display: block; margin-bottom: 10px; }
+    .step h3 { font-size: 20px; }
+    .step p { color: var(--muted); margin: 0; }
+
+    /* Visit */
+    .visit-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 32px; align-items: stretch; }
+    .info { background: #fff; border: 1px solid var(--line); border-radius: 30px; padding: 36px; }
+    .info h3 { font-size: 22px; color: var(--deep); }
+    .info .row { display: flex; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .info .row:last-of-type { border-bottom: 0; }
+    .info .row svg { width: 22px; height: 22px; stroke: var(--deep); flex: none; margin-top: 2px; }
+    .info .row b { display: block; }
+    .info .row span { color: var(--muted); font-size: 15px; }
+    .map { border-radius: 30px; overflow: hidden; min-height: 380px; border: 1px solid var(--line); background: var(--mint-2); }
+    .map iframe { width: 100%; height: 100%; min-height: 380px; border: 0; display: block; }
+
+    /* FAQ */
+    details { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 20px 24px; }
+    details + details { margin-top: 12px; }
+    summary { cursor: pointer; font-weight: 600; font-size: 17px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--deep); font-size: 22px; line-height: 1; }
+    details[open] summary::after { content: "–"; }
+    details p { color: var(--muted); margin: 12px 0 0; }
+
+    .final { text-align: center; }
+    .final-box { background: linear-gradient(140deg, var(--deep), var(--deep-2)); color: #fff; border-radius: 34px; padding: 64px 24px; position: relative; overflow: hidden; }
+    .final-box h2 { color: #fff; font-size: clamp(30px, 4vw, 46px); }
+    .final-box p { color: var(--mint); max-width: 520px; margin: 0 auto 28px; }
+
+    footer { padding: 34px 0 110px; color: var(--muted); font-size: 14px; }
+    .foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+    .wa-float { position: fixed; right: 18px; bottom: 18px; z-index: 30; width: 60px; height: 60px; border-radius: 50%; background: var(--wa); display: grid; place-items: center; box-shadow: 0 12px 28px rgba(0,0,0,.2); }
+    .wa-float .wa-icon { width: 30px; height: 30px; color: #fff; }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .why-grid, .visit-grid { grid-template-columns: 1fr; }
+      .svc-grid, .step-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .brand small { display: none; }
+      .hero { padding: 48px 0 64px; }
+      .hero-cta .btn { width: 100%; }
+      .svc-grid, .step-grid { grid-template-columns: 1fr; }
+      section { padding: 64px 0; }
+      .quote { padding: 32px; } .quote p { font-size: 22px; }
+      .info { padding: 26px; }
+      header .btn-sm span { display: none; }
+      header .btn-sm { padding: 10px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .blob, .tooth, .sparkle, .dot { animation: none; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 9.9 5.2 16 5.2s11 4.7 11 10.6-4.9 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.1 2.9 1.1 3.5.9 4.1.8.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.7-.4z"/></symbol>
+  <symbol id="tooth" viewBox="0 0 64 64"><path d="M20 10c-8 0-12 8-11 17 1 8 4 14 5 22 1 6 7 6 8 0l3-12c1-4 6-4 7 0l3 12c1 6 7 6 8 0 1-8 4-14 5-22 1-9-3-17-11-17-5 0-8 3-13 3s-8-3-14-3z"/></symbol>
+</svg>
+
+<div class="preview">Prévia criada pela <b>Marcos Felipe Design</b> para a Cuidar e Sorrir Odontologia · textos e fotos são ajustados com você</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark"><svg viewBox="0 0 64 64" fill="#d9f2ec"><use href="#tooth"/></svg></span>
+      <span><b>Cuidar e Sorrir</b><small>Odontologia · Dra. Carmen Silvia</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#onde-estamos">Onde estamos</a>
+    </nav>
+    <a class="btn btn-wa btn-sm js-wa" aria-label="Agendar pelo WhatsApp" href="#" data-msg="Olá! Gostaria de agendar uma consulta."><svg class="wa-icon"><use href="#wa"/></svg> <span>Agendar</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="blob a"></div><div class="blob b"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">● Consultório em Pinheiros, São Paulo</span>
+        <h1>Seu sorriso cuidado <em>com calma</em> e atenção</h1>
+        <p class="lead">Na Cuidar e Sorrir, cada consulta é feita sem pressa, com explicação de cada etapa do tratamento. Agende pelo WhatsApp e escolha o melhor horário para você.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa js-wa" href="#" data-msg="Olá! Gostaria de agendar uma consulta."><svg class="wa-icon"><use href="#wa"/></svg> Agendar pelo WhatsApp</a>
+          <a class="btn btn-line" href="#tratamentos">Ver tratamentos</a>
+        </div>
+        <p class="emergency"><span class="dot"></span>Emergência? Ligue para <a href="tel:+5511999755757">(11) 99975-5757</a></p>
+      </div>
+      <div class="hero-card reveal">
+        <div class="tooth-wrap">
+          <svg class="tooth" viewBox="0 0 64 64" fill="#ffffff"><use href="#tooth"/></svg>
+          <span class="sparkle s1">✦</span><span class="sparkle s2">✦</span><span class="sparkle s3">✦</span>
+        </div>
+        <div class="doc">
+          <span class="avatar">CS</span>
+          <div><b>Dra. Carmen Silvia</b><span>e equipe · atendimento com hora marcada</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="tratamentos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Tratamentos</span>
+        <h2>Cuidado completo para o seu sorriso</h2>
+        <p>Da prevenção aos tratamentos mais completos, sempre explicando cada passo antes de começar.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 2"/></svg></div><h3>Consulta e avaliação</h3><p>Avaliação completa e um plano de tratamento claro, sem surpresas.</p></div>
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 20c4-1 6-5 8-9s4-7 8-7"/><path d="M14 4h6v6"/></svg></div><h3>Limpeza e prevenção</h3><p>Limpeza, remoção de tártaro e orientação para manter a saúde da boca.</p></div>
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2 8 12.7 4 8.8 9.5 8z"/></svg></div><h3>Clareamento</h3><p>Dentes mais claros com acompanhamento profissional e segurança.</p></div>
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 12h6M12 9v6"/></svg></div><h3>Restaurações</h3><p>Tratamento de cáries e restaurações na cor natural do dente.</p></div>
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M5 12h14"/><path d="M8 8l-3 4 3 4M16 8l3 4-3 4"/></svg></div><h3>Próteses</h3><p>Reabilitação do sorriso com conforto, função e aparência natural.</p></div>
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Atendimento de urgência</h3><p>Dor ou imprevisto? Fale com a equipe pelo telefone de emergência.</p></div>
+      </div>
+      <p class="note">* Lista de tratamentos ilustrativa nesta prévia: no site final, entram exatamente os serviços do consultório.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap why-grid">
+      <div class="reveal">
+        <span class="kicker">Por que a Cuidar e Sorrir</span>
+        <h2 style="color:var(--deep);font-size:clamp(30px,3.6vw,44px)">Um consultório onde você é ouvido</h2>
+        <ul class="why-list">
+          <li><span class="n">1</span><div><b>Atendimento sem pressa</b><span>Tempo para conversar, tirar dúvidas e entender o seu caso.</span></div></li>
+          <li><span class="n">2</span><div><b>Tudo explicado antes</b><span>Você sabe o que será feito, quanto tempo leva e o porquê.</span></div></li>
+          <li><span class="n">3</span><div><b>Fácil de agendar</b><span>Marque pelo WhatsApp, no horário que funciona para você.</span></div></li>
+        </ul>
+      </div>
+      <div class="quote reveal">
+        <p>Seu sorriso merece tempo, atenção e um cuidado que você entende.</p>
+        <small>Cuidar e Sorrir Odontologia</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="como-funciona">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Como funciona</span>
+        <h2>Da primeira mensagem ao sorriso cuidado</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step reveal"><h3>Agende pelo WhatsApp</h3><p>Escolha o dia e o horário. A equipe confirma com você.</p></div>
+        <div class="step reveal"><h3>Avaliação</h3><p>Na consulta, a Dra. Carmen avalia e explica as opções de tratamento.</p></div>
+        <div class="step reveal"><h3>Tratamento</h3><p>Com tudo combinado, o tratamento começa no seu ritmo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="onde-estamos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Onde estamos</span>
+        <h2>No coração de Pinheiros</h2>
+      </div>
+      <div class="visit-grid">
+        <div class="info reveal">
+          <h3>Visite o consultório</h3>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div><b>Rua Amaro Cavalheiro, 347</b><span>Thera Office Faria Lima · Pinheiros · Sala 720<br>São Paulo, SP</span></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><div><b>(11) 99975-5757</b><span>WhatsApp e telefone · emergências: ligue neste número</span></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Atendimento com hora marcada</b><span>Consulte os horários disponíveis pelo WhatsApp</span></div></div>
+          <a class="btn btn-wa js-wa" style="margin-top:18px" href="#" data-msg="Olá! Gostaria de agendar uma consulta."><svg class="wa-icon"><use href="#wa"/></svg> Agendar consulta</a>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa do consultório" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Rua+Amaro+Cavalheiro,+347,+Pinheiros,+S%C3%A3o+Paulo+-+SP&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="kicker">Dúvidas</span><h2>Perguntas frequentes</h2></div>
+      <details class="reveal"><summary>Como faço para agendar?</summary><p>É só tocar em "Agendar pelo WhatsApp" e mandar uma mensagem. A equipe responde com os horários disponíveis.</p></details>
+      <details class="reveal"><summary>E se eu estiver com dor ou tiver uma emergência?</summary><p>Ligue para (11) 99975-5757. A equipe orienta você e, sempre que possível, encaixa o atendimento.</p></details>
+      <details class="reveal"><summary>Onde fica o consultório?</summary><p>Na Rua Amaro Cavalheiro, 347, no Thera Office Faria Lima, sala 720, em Pinheiros, São Paulo.</p></details>
+      <details class="reveal"><summary>A primeira consulta já inclui um plano de tratamento?</summary><p>Na avaliação, a Dra. Carmen explica o que você precisa e as opções de tratamento, para você decidir com tranquilidade.</p></details>
+    </div>
+  </section>
+
+  <section class="final" style="padding-top:0">
+    <div class="wrap">
+      <div class="final-box reveal">
+        <h2>Pronto para cuidar do seu sorriso?</h2>
+        <p>Agende sua consulta pelo WhatsApp. É rápido e você escolhe o melhor horário.</p>
+        <a class="btn btn-wa js-wa" href="#" data-msg="Olá! Gostaria de agendar uma consulta."><svg class="wa-icon"><use href="#wa"/></svg> Agendar pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="ano"></span> Cuidar e Sorrir Odontologia · Dra. Carmen Silvia</span>
+    <span>Prévia feita por <a href="../../">Marcos Felipe Design</a></span>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" href="#" aria-label="Agendar pelo WhatsApp" data-msg="Olá! Gostaria de agendar uma consulta."><svg class="wa-icon"><use href="#wa"/></svg></a>
+
+<script>
+  var WHATSAPP = "5511999755757";
+  document.querySelectorAll(".js-wa").forEach(function (a) {
+    a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(a.dataset.msg || "");
+    a.target = "_blank"; a.rel = "noopener";
+  });
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  var io = "IntersectionObserver" in window ? new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { threshold: .12 }) : null;
+  document.querySelectorAll(".reveal").forEach(function (el, i) {
+    el.style.transitionDelay = (i % 3) * 0.08 + "s";
+    if (io) io.observe(el); else el.classList.add("in");
+  });
+</script>
+</body>
+</html>
