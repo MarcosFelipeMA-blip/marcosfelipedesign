@@ -135,6 +135,11 @@
       border: 0; padding: 34px; transition: transform .2s ease;
     }
     .example:hover { transform: translateY(-3px); }
+    .examples { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .examples .example { max-width: none; }
+    .ex-barber { background: radial-gradient(80% 90% at 70% 40%, rgba(200,162,74,.5), transparent 70%), #0d0c0b; }
+    .ex-garage { background: radial-gradient(80% 90% at 70% 40%, rgba(255,194,26,.45), transparent 70%), #111214; }
+    @media (max-width: 900px) { .examples { grid-template-columns: 1fr; } }
     .example h3 { font-size: 40px; text-transform: uppercase; letter-spacing: .02em; margin-top: 12px; }
     .example p { color: #f4ead9; }
     .example-tag { display: inline-block; background: #c6f432; color: #0e0d12; font-weight: 700; font-size: 13px; padding: 5px 12px; border-radius: 999px; }
@@ -375,14 +380,26 @@
   <section id="exemplos" class="problem">
     <div class="wrap">
       <div class="section-head">
-        <h2>Veja um exemplo</h2>
-        <p>Um site de demonstração para um pet shop fictício, com animações e objetos em 3D. Abra no celular também.</p>
+        <h2>Veja exemplos</h2>
+        <p>Sites de demonstração para negócios fictícios de três ramos diferentes. Abra no celular também.</p>
       </div>
-      <a class="card example" href="exemplos/petshop/">
-        <span class="example-tag">Pet shop</span>
-        <h3>Pet Aurora</h3>
-        <p>Banho, tosa, leva e traz e agendamento pelo WhatsApp. Ver o site →</p>
-      </a>
+      <div class="examples">
+        <a class="card example" href="exemplos/petshop/">
+          <span class="example-tag">Pet shop</span>
+          <h3>Pet Aurora</h3>
+          <p>Objetos em 3D, banho e tosa, leva e traz. Ver o site →</p>
+        </a>
+        <a class="card example ex-barber" href="exemplos/barbearia/">
+          <span class="example-tag">Barbearia</span>
+          <h3>Navalha 19</h3>
+          <p>Visual clássico, tabela de preços e agendamento. Ver o site →</p>
+        </a>
+        <a class="card example ex-garage" href="exemplos/oficina/">
+          <span class="example-tag">Oficina mecânica</span>
+          <h3>Torque Auto</h3>
+          <p>Orçamento pelo WhatsApp, serviços e garantia. Ver o site →</p>
+        </a>
+      </div>
     </div>
   </section>
 
