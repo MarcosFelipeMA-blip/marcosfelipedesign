@@ -129,6 +129,15 @@
     }
 
     .problem { background: var(--white); border-block: 1px solid var(--line); }
+    .example {
+      display: block; text-decoration: none; max-width: 560px; color: var(--white);
+      background: radial-gradient(80% 90% at 70% 40%, rgba(255,106,43,.55), transparent 70%), #0e0d12;
+      border: 0; padding: 34px; transition: transform .2s ease;
+    }
+    .example:hover { transform: translateY(-3px); }
+    .example h3 { font-size: 40px; text-transform: uppercase; letter-spacing: .02em; margin-top: 12px; }
+    .example p { color: #f4ead9; }
+    .example-tag { display: inline-block; background: #c6f432; color: #0e0d12; font-weight: 700; font-size: 13px; padding: 5px 12px; border-radius: 999px; }
 
     /* Steps */
     .steps { counter-reset: step; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -217,6 +226,7 @@
     <a class="brand" href="#inicio"><span class="brand-mark">MF</span> Marcos Felipe Design</a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#como-funciona">Como funciona</a>
+      <a href="#exemplos">Exemplo</a>
       <a href="#preco">Preço</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
@@ -359,6 +369,20 @@
         <span class="tag">Consultórios</span>
         <span class="tag">E outros negócios locais</span>
       </div>
+    </div>
+  </section>
+
+  <section id="exemplos" class="problem">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Veja um exemplo</h2>
+        <p>Um site de demonstração para um pet shop fictício, com animações e objetos em 3D. Abra no celular também.</p>
+      </div>
+      <a class="card example" href="exemplos/petshop/">
+        <span class="example-tag">Pet shop</span>
+        <h3>Pet Aurora</h3>
+        <p>Banho, tosa, leva e traz e agendamento pelo WhatsApp. Ver o site →</p>
+      </a>
     </div>
   </section>
 
