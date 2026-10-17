@@ -8,6 +8,8 @@
   <meta property="og:title" content="Marcos Felipe Design | Sites para negócios locais">
   <meta property="og:description" content="Seu negócio aparecendo para quem procura no Google, com botão de WhatsApp e preço fechado.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marcosfelipema-blip.github.io/marcosfelipedesign/">
+  <link rel="canonical" href="https://marcosfelipema-blip.github.io/marcosfelipedesign/">
   <meta property="og:locale" content="pt_BR">
   <meta name="theme-color" content="#0f1b2d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b2d'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='%23f5b841'%3EMF%3C/text%3E%3C/svg%3E">
@@ -193,6 +195,9 @@
     }
     @media (max-width: 640px) {
       .nav-links { display: none; }
+      .hide-sm { display: none; }
+      header .btn-sm { padding: 10px; border-radius: 50%; }
+      .brand { font-size: 15px; }
       .grid-3, .grid-2, .steps { grid-template-columns: 1fr; }
       section { padding: 60px 0; }
       .hero { padding: 48px 0 64px; }
@@ -215,8 +220,8 @@
       <a href="#preco">Preço</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
-    <a class="btn btn-wa btn-sm js-wa" href="#" data-msg="Oi Marcos! Vi seu site e quero saber mais sobre um site para o meu negócio.">
-      <svg class="wa-icon"><use href="#wa"/></svg> Falar no WhatsApp
+    <a class="btn btn-wa btn-sm js-wa" aria-label="Falar no WhatsApp" href="#" data-msg="Oi Marcos! Vi seu site e quero saber mais sobre um site para o meu negócio.">
+      <svg class="wa-icon"><use href="#wa"/></svg> <span class="hide-sm">Falar no WhatsApp</span>
     </a>
   </div>
 </header>
