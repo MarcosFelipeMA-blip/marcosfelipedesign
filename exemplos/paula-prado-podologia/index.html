@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paula Prado Podologia | Podologia em Campinas</title>
+<!-- Prévia: fora do Google. Apague esta linha quando o site for publicado de verdade. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Paula Prado Podologia: podologia em Campinas – SP. Veja os serviços e agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@400;500;600&display=swap">
+
+<script>
+/* ============================================================
+   MODELO REUTILIZÁVEL – CLÍNICAS DE ESTÉTICA
+   Para fazer o site de outra clínica: copie esta pasta e troque
+   só o que está dentro de CONFIG. O resto da página se ajusta.
+   ============================================================ */
+const CONFIG = {
+  "nome": "Paula Prado Podologia",
+  "segmento": "Podologia",
+  "cidade": "Campinas",
+  "uf": "SP",
+  "endereco": "",
+  "whatsapp": "5519982044113",
+  "telefoneVisivel": "(19) 98204-4113",
+  "instagram": "",
+  "horario": [
+    [
+      "Segunda a sexta",
+      "9h às 19h"
+    ],
+    [
+      "Sábado",
+      "9h às 14h"
+    ]
+  ],
+  "destaques": [
+    "Hora marcada",
+    "Atendimento individual"
+  ],
+  "cores": {
+    "accent": "#3f7f7a",
+    "accentDeep": "#2c5d59",
+    "blush": "#e1eeec"
+  },
+  "chamada": "Pés saudáveis, passos sem dor.",
+  "subtitulo": "Cuidados de podologia com hora marcada em Campinas: unhas, calos, rachaduras e prevenção.",
+  "sobre": "A Paula Prado Podologia atende com hora marcada e começa cada consulta avaliando os seus pés. Assim o cuidado é indicado para o seu caso, com a frequência certa de sessões e orientações para o dia a dia.",
+  "servicos": [
+    {
+      "nome": "Podologia preventiva",
+      "desc": "Corte correto das unhas, remoção de calosidades e hidratação.",
+      "dur": "1h"
+    },
+    {
+      "nome": "Unha encravada",
+      "desc": "Tratamento da unha e orientação para evitar que volte a encravar.",
+      "dur": "45 min"
+    },
+    {
+      "nome": "Órtese para unhas",
+      "desc": "Correção gradual da curvatura da unha, sem cirurgia.",
+      "dur": "40 min"
+    },
+    {
+      "nome": "Calos e calosidades",
+      "desc": "Remoção cuidadosa e orientação sobre calçados e pisada.",
+      "dur": "30 min"
+    },
+    {
+      "nome": "Rachaduras nos calcanhares",
+      "desc": "Remoção da pele ressecada e hidratação profunda.",
+      "dur": "45 min"
+    },
+    {
+      "nome": "Pés de pessoas com diabetes",
+      "desc": "Cuidado com atenção redobrada e acompanhamento periódico.",
+      "dur": "1h"
+    }
+  ],
+  "duvidas": [
+    [
+      "Preciso agendar?",
+      "Sim. O atendimento é com hora marcada: chame no WhatsApp, escolha o serviço e o melhor horário."
+    ],
+    [
+      "Com que frequência devo fazer?",
+      "Depende do caso. Na primeira consulta você recebe a indicação de quando voltar."
+    ],
+    [
+      "Quais formas de pagamento?",
+      "PIX, cartão de débito e crédito. Pacotes de sessões podem ser combinados no atendimento."
+    ],
+    [
+      "Como chego?",
+      "Toque em \"Ver no mapa\" para abrir o endereço no Google Maps."
+    ]
+  ],
+  "demonstracao": true,
+  "feitoPor": {
+    "nome": "Marcos Felipe Design",
+    "url": "https://marcosfelipema-blip.github.io/marcosfelipedesign/"
+  }
+};
+</script>
+
+<style>
+/* Layout: página única, celular primeiro. Topo com nome e botão de agendar, abertura dividida, serviços em grade, passos, sobre, fotos, dúvidas, contato. */
+:root {
+  --bg: #fbf7f6;
+  --surface: #ffffff;
+  --blush: #f1e2e3;
+  --ink: #2c1c24;
+  --muted: #6e5a63;
+  --line: #eadcdf;
+  --accent: #a8566f;
+  --accent-deep: #7f3b52;
+  --wa: #1f9d55;
+  --font-display: "Marcellus", "Didot", Georgia, serif;
+  --font-body: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+img { max-width: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+[hidden] { display: none !important; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.15; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(30px, 4.2vw, 42px); }
+.eyebrow { font-size: 13px; text-transform: uppercase; letter-spacing: .18em; color: var(--accent); font-weight: 500; }
+section { padding-block: 72px; }
+
+.demo { background: var(--ink); color: #f6eef0; font-size: 13.5px; text-align: center; padding: 8px 20px; }
+.demo a { color: #f6eef0; }
+
+header { position: sticky; top: 0; z-index: 10; background: rgba(251, 247, 246, .94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); padding-top: env(safe-area-inset-top, 0px); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.brand { font-family: var(--font-display); font-size: 22px; letter-spacing: .02em; text-decoration: none; }
+.nav ul { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+.nav ul a { text-decoration: none; color: var(--muted); }
+.nav ul a:hover { color: var(--ink); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 24px; border-radius: 999px; font-weight: 500; text-decoration: none; font-size: 16px; border: 1px solid transparent; transition: background .2s, transform .2s; }
+.btn:hover { transform: translateY(-1px); }
+.btn-wa { background: var(--wa); color: #fff; }
+.btn-wa:hover { background: #188547; }
+.btn-ghost { border-color: var(--ink); color: var(--ink); }
+.btn-ghost:hover { background: var(--ink); color: var(--bg); }
+.btn-sm { padding: 9px 18px; font-size: 15px; }
+.wa-ico { width: 18px; height: 18px; fill: currentColor; flex: none; }
+
+.hero { padding-block: 64px 80px; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(40px, 6vw, 68px); margin-top: 14px; }
+.hero p.lead { font-size: 19px; color: var(--muted); max-width: 34ch; margin: 20px 0 30px; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-meta { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 28px; font-size: 15px; color: var(--muted); }
+.hero-meta span::before { content: "·"; color: var(--accent); margin-right: 8px; font-weight: 700; }
+.art { position: relative; aspect-ratio: 4 / 5; max-width: 100%; border-radius: 200px 200px 24px 24px; overflow: hidden; background:
+  radial-gradient(60% 50% at 30% 30%, color-mix(in srgb, var(--accent) 14%, white) 0%, transparent 70%),
+  radial-gradient(55% 45% at 75% 65%, color-mix(in srgb, var(--accent) 30%, white) 0%, transparent 70%),
+  linear-gradient(160deg, color-mix(in srgb, var(--blush) 70%, white), color-mix(in srgb, var(--accent) 18%, var(--blush))); }
+.art::after { content: ""; position: absolute; inset: 18px; border: 1px solid color-mix(in srgb, var(--accent-deep) 25%, transparent); border-radius: 190px 190px 14px 14px; }
+.art-tag { position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%); background: var(--surface); padding: 10px 18px; border-radius: 999px; font-size: 14px; white-space: nowrap; box-shadow: 0 6px 20px rgba(44, 28, 36, .1); }
+.art-mono { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-display); font-size: clamp(90px, 14vw, 150px); color: color-mix(in srgb, var(--accent-deep) 18%, transparent); }
+
+.svc-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin-bottom: 36px; }
+.svc-head p { color: var(--muted); max-width: 46ch; margin: 0; }
+.svc { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.card { background: var(--surface); padding: 28px 26px; display: flex; flex-direction: column; gap: 10px; }
+.card h3 { font-size: 24px; }
+.card p { margin: 0; color: var(--muted); font-size: 15.5px; flex: 1; }
+.card .foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 8px; font-size: 14px; }
+.card .dur { color: var(--muted); }
+.card a { color: var(--accent-deep); font-weight: 500; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+
+.steps-bg { background: var(--blush); }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 36px; counter-reset: s; }
+.step { counter-increment: s; }
+.step::before { content: counter(s); font-family: var(--font-display); font-size: 40px; color: var(--accent); display: block; line-height: 1; margin-bottom: 12px; }
+.step h3 { font-size: 22px; margin-bottom: 6px; }
+.step p { margin: 0; color: var(--muted); }
+
+.about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
+.about p { color: var(--muted); font-size: 18px; margin: 18px 0 0; max-width: 56ch; }
+.photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ph { aspect-ratio: 1; border-radius: 14px; background: linear-gradient(145deg, var(--blush), color-mix(in srgb, var(--accent) 22%, var(--blush))); display: grid; place-items: center; text-align: center; font-size: 13px; color: var(--accent-deep); padding: 10px; }
+.ph:nth-child(2) { background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 12%, var(--blush)), color-mix(in srgb, var(--accent) 32%, var(--blush))); }
+.ph:nth-child(3) { background: linear-gradient(145deg, color-mix(in srgb, var(--blush) 80%, white), color-mix(in srgb, var(--accent) 26%, var(--blush))); }
+.ph:nth-child(4) { background: linear-gradient(145deg, color-mix(in srgb, var(--blush) 60%, white), color-mix(in srgb, var(--accent) 16%, var(--blush))); }
+
+.faq { max-width: 760px; }
+.faq details { border-bottom: 1px solid var(--line); padding-block: 18px; }
+.faq summary { cursor: pointer; font-size: 19px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--accent); font-size: 24px; line-height: 1; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { margin: 10px 0 0; color: var(--muted); }
+
+.contact { background: var(--ink); color: #f6eef0; border-radius: 28px; padding: 48px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; }
+.contact h2 { color: #fff; }
+.contact p { color: #d9c9ce; }
+.contact .eyebrow { color: color-mix(in srgb, var(--accent) 45%, white); }
+.info { display: flex; flex-direction: column; gap: 18px; font-size: 16px; }
+.info dt { font-size: 12px; text-transform: uppercase; letter-spacing: .16em; color: color-mix(in srgb, var(--accent) 45%, white); }
+.info dd { margin: 2px 0 0; }
+.info table { border-collapse: collapse; }
+.info td { padding: 2px 18px 2px 0; }
+.contact .btn-ghost { border-color: #f6eef0; color: #f6eef0; }
+.contact .btn-ghost:hover { background: #f6eef0; color: var(--ink); }
+
+footer { padding-block: 36px calc(36px + env(safe-area-inset-bottom, 0px)); font-size: 14px; color: var(--muted); }
+footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+.float { position: fixed; right: calc(18px + env(safe-area-inset-right, 0px)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); width: 58px; height: 58px; border-radius: 50%; background: var(--wa); color: #fff; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(31, 157, 85, .35); z-index: 20; }
+.float .wa-ico { width: 28px; height: 28px; }
+
+@media (max-width: 880px) {
+  .nav ul { display: none; }
+  .hero-grid, .about, .contact { grid-template-columns: minmax(0, 1fr); }
+  .hero { padding-block: 36px 56px; }
+  .art { max-width: 420px; margin-inline: auto; width: 100%; }
+  .svc { grid-template-columns: minmax(0, 1fr); }
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .contact { padding: 32px 24px; }
+  section { padding-block: 56px; }
+}
+@media (min-width: 881px) and (max-width: 1040px) { .svc { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+</style>
+</head>
+<body>
+<div class="demo" id="demo" hidden></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" data-t="nome"></a>
+    <ul>
+      <li><a href="#tratamentos">Tratamentos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-wa btn-sm" data-wa="Olá! Vi o site e gostaria de agendar um horário.">Agendar</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span data-t="segmento"></span> em <span data-t="cidade"></span></div>
+        <h1 data-t="chamada"></h1>
+        <p class="lead" data-t="subtitulo"></p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa" data-wa="Olá! Vi o site e gostaria de agendar uma avaliação."><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Agendar pelo WhatsApp</a>
+          <a class="btn btn-ghost" href="#tratamentos">Ver tratamentos</a>
+        </div>
+        <div class="hero-meta" id="destaques"></div>
+      </div>
+      <div class="art" role="img" aria-label="Ilustração decorativa">
+        <div class="art-mono" id="mono"></div>
+        <div class="art-tag">Atendimento com hora marcada</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tratamentos">
+    <div class="wrap">
+      <div class="svc-head">
+        <div><div class="eyebrow">Tratamentos</div><h2>O que fazemos</h2></div>
+        <p>Toque em "Agendar" no tratamento que você quer e a conversa no WhatsApp já abre com ele escrito.</p>
+      </div>
+      <div class="svc" id="servicos"></div>
+    </div>
+  </section>
+
+  <section class="steps-bg">
+    <div class="wrap">
+      <div class="eyebrow">Como funciona</div>
+      <h2>Do primeiro contato ao resultado</h2>
+      <div class="steps">
+        <div class="step"><h3>Chame no WhatsApp</h3><p>Diga o que você procura e escolha o melhor dia e horário.</p></div>
+        <div class="step"><h3>Avaliação</h3><p>Na primeira visita, a pele é avaliada e o tratamento é indicado para o seu caso.</p></div>
+        <div class="step"><h3>Tratamento e cuidados</h3><p>Você sai com o plano de sessões e as orientações para continuar em casa.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap about">
+      <div class="photos" aria-label="Espaço para fotos do estabelecimento">
+        <div class="ph">Foto do espaço</div><div class="ph">Foto de um atendimento</div>
+        <div class="ph">Foto da equipe</div><div class="ph">Antes e depois (com autorização)</div>
+      </div>
+      <div>
+        <div class="eyebrow">Sobre</div>
+        <h2 data-t="nome"></h2>
+        <p data-t="sobre"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="duvidas">
+    <div class="wrap">
+      <div class="eyebrow">Dúvidas</div>
+      <h2>Perguntas frequentes</h2>
+      <div class="faq" id="faq"></div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <div class="eyebrow">Contato</div>
+          <h2>Agende seu horário</h2>
+          <p>Respondemos pelo WhatsApp no horário de atendimento.</p>
+          <div class="hero-ctas" style="margin-top:26px">
+            <a class="btn btn-wa" data-wa="Olá! Vi o site e gostaria de agendar um horário."><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Chamar no WhatsApp</a>
+            <a class="btn btn-ghost" id="mapa" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+        </div>
+        <dl class="info">
+          <div><dt>Endereço</dt><dd id="end"></dd></div>
+          <div><dt>Telefone / WhatsApp</dt><dd data-t="telefoneVisivel"></dd></div>
+          <div><dt>Horário</dt><dd><table id="horas"></table></dd></div>
+          <div id="ig-row" hidden><dt>Instagram</dt><dd><a id="ig" target="_blank" rel="noopener"></a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="ano"></span> <span data-t="nome"></span> · <span id="foot-cidade"></span></span>
+    <span>Site por <a id="credit" target="_blank" rel="noopener"></a></span>
+  </div>
+</footer>
+
+<a class="float" data-wa="Olá! Vi o site e gostaria de agendar um horário." aria-label="Conversar no WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg></a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.09c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34l.52.01c.17.01.39-.06.61.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.28-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></symbol>
+</svg>
+
+<script>
+(function () {
+  const c = CONFIG;
+  const local = c.endereco ? `${c.endereco} – ${c.cidade}, ${c.uf}` : `${c.cidade} – ${c.uf}`;
+  const wa = msg => `https://wa.me/${c.whatsapp}?text=${encodeURIComponent(msg)}`;
+  const esc = s => String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+
+  document.querySelectorAll("[data-t]").forEach(el => { el.textContent = c[el.dataset.t]; });
+  document.querySelectorAll("[data-wa]").forEach(el => { el.href = wa(el.dataset.wa); el.target = "_blank"; el.rel = "noopener"; });
+
+  document.getElementById("servicos").innerHTML = c.servicos.map(s => `
+    <article class="card">
+      <h3>${esc(s.nome)}</h3>
+      <p>${esc(s.desc)}</p>
+      <div class="foot"><span class="dur">${esc(s.dur)}</span>
+        <a href="${wa("Olá! Gostaria de agendar: " + s.nome + ".")}" target="_blank" rel="noopener">Agendar →</a></div>
+    </article>`).join("");
+
+  document.getElementById("faq").innerHTML = c.duvidas.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("");
+  document.getElementById("horas").innerHTML = c.horario.map(([d, h]) => `<tr><td>${esc(d)}</td><td>${esc(h)}</td></tr>`).join("");
+  document.getElementById("end").textContent = local;
+  document.getElementById("destaques").innerHTML = [...c.destaques, `${c.cidade} – ${c.uf}`].map(d => `<span>${esc(d)}</span>`).join("");
+  if (c.cores) {
+    const st = document.documentElement.style;
+    if (c.cores.accent) st.setProperty("--accent", c.cores.accent);
+    if (c.cores.accentDeep) st.setProperty("--accent-deep", c.cores.accentDeep);
+    if (c.cores.blush) st.setProperty("--blush", c.cores.blush);
+  }
+  document.getElementById("foot-cidade").textContent = `${c.cidade} – ${c.uf}`;
+  document.getElementById("mapa").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${c.nome} ${local}`);
+  const iniciais = c.nome.split(/\s+/).filter(w => /^\p{Lu}/u.test(w)).slice(0, 2).map(w => w[0]).join("");
+  document.getElementById("mono").textContent = iniciais || c.nome[0];
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  const cr = document.getElementById("credit"); cr.textContent = c.feitoPor.nome; cr.href = c.feitoPor.url;
+  if (c.instagram) { document.getElementById("ig-row").hidden = false; const ig = document.getElementById("ig"); ig.textContent = "@" + c.instagram; ig.href = "https://instagram.com/" + c.instagram; }
+  if (c.demonstracao) {
+    const d = document.getElementById("demo"); d.hidden = false;
+    d.innerHTML = `Exemplo de site criado por <a href="${c.feitoPor.url}" target="_blank" rel="noopener">${esc(c.feitoPor.nome)}</a> para ${esc(c.nome)}. Serviços, horários e textos são ilustrativos e serão ajustados com você.`;
+  }
+
+  // Dados estruturados para o Google (perfil de negócio local)
+  const ld = { "@context": "https://schema.org", "@type": "BeautySalon", name: c.nome, telephone: "+" + c.whatsapp,
+    address: { "@type": "PostalAddress", addressLocality: c.cidade, addressRegion: c.uf, addressCountry: "BR", ...(c.endereco ? { streetAddress: c.endereco } : {}) },
+    makesOffer: c.servicos.map(s => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.nome } })) };
+  const s = document.createElement("script"); s.type = "application/ld+json"; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
+  document.title = `${c.nome} | ${c.segmento} em ${c.cidade}`;
+})();
+</script>
+</body>
+</html>
